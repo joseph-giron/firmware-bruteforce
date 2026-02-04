@@ -1,4 +1,6 @@
-﻿using System;
+/* sloooooooooooooooow, use the rust one */
+
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
@@ -96,3 +98,4 @@ class Program
         Console.WriteLine("Done.");
     }
 }
+

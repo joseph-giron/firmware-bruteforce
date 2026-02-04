@@ -1,0 +1,11 @@
+[package]
+name = "xor_squashfs"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "xor_squashfs"
+path = "xor_squashfs.rs"
+
+[dependencies]
+num_cpus = "1.16"

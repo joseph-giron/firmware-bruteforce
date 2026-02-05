@@ -39,8 +39,8 @@ cargo run --release firmware.bin 16
 
 Or after building:
 ```bash
-./target/release/xor_squashfs firmware.bin
-./target/release/xor_squashfs firmware.bin 8
+./target/release/filesystem-xor-bruteforce firmware.bin
+./target/release/filesystem-xor-bruteforce firmware.bin 8
 ```
 
 ## Performance

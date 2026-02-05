@@ -1,11 +1,11 @@
 [package]
-name = "xor_squashfs"
-version = "0.1.0"
-edition = "2021"
+name = "xor_firmware_bruteforcer"
+version = "0.1.1"
+edition = "2026"
 
 [[bin]]
-name = "xor_squashfs"
-path = "xor_squashfs.rs"
+name = "xor_firmware_bruteforcer"
+path = "filesystem-xor-bruteforce.rs"
 
 [dependencies]
 num_cpus = "1.16"

@@ -1,11 +1,12 @@
 # XOR & RC4 Filesystem Finder (Multithreaded)
 
-A blazing-fast Rust tool to brute-force XOR keys on binary files to discover hidden filesystems.
+A blazing-fast Rust tool to brute-force XOR and RC4 on binary files to discover hidden filesystems.
 
 ## What it does
 
 - Reads the first 1MB of a binary file
-- XORs it with ALL keys from 0x00000000 to 0xFFFFFFFF (4 billion keys!) (now with RC4 support!)
+- XORs it with ALL keys from 0x00000000 to 0xFFFFFFFF (4 billion keys!)
+- Does the same with RC4, but only the firs 4 bytes
 - Checks for filesystem magic bytes:
   - **Squashfs** (both little and big endian)
   - **CramFS** (both little and big endian)
@@ -87,7 +88,7 @@ The actual time depends on:
 
 ## Tips
 
-- The tool tests EVERY possible 32-bit XOR key
+- The tool tests EVERY possible 32-bit XOR and RC4 key
 - Once you find a key, you can decode the entire file with that key
 - Finding offset 0x0 means the filesystem starts at the beginning
 - Multiple matches might indicate false positives - validate manually

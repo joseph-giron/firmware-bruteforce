@@ -5,7 +5,7 @@ A blazing-fast Rust tool to brute-force XOR keys on binary files to discover hid
 ## What it does
 
 - Reads the first 1MB of a binary file
-- XORs it with ALL keys from 0x00000000 to 0xFFFFFFFF (4 billion keys!)
+- XORs it with ALL keys from 0x00000000 to 0xFFFFFFFF (4 billion keys!) (now with RC4 support!)
 - Checks for filesystem magic bytes:
   - **Squashfs** (both little and big endian)
   - **CramFS** (both little and big endian)

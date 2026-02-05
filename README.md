@@ -1,4 +1,4 @@
-# XOR Filesystem Finder (Multithreaded)
+# XOR & RC4 Filesystem Finder (Multithreaded)
 
 A blazing-fast Rust tool to brute-force XOR keys on binary files to discover hidden filesystems.
 

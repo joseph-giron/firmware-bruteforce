@@ -2,6 +2,8 @@
 
 A blazing-fast Rust tool to brute-force XOR and RC4 on binary files to discover hidden filesystems.
 
+For the CactusCon 2026 preso https://docs.google.com/presentation/d/13c1iUuD1TIVJeqqJUDqwP4DUKsnzT1sws_GocebzNyo
+
 ## What it does
 
 - Reads the first 1MB of a binary file
